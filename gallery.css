@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: rgb(0, 0, 0);
+}
+.container{
+    position: relative;
+    max-width: 1350px;
+    width: 100%;
+    padding: 20px;
+    margin: 50px auto;
+    background-color: rgb(0, 0, 0);
+}
+.filter_buttons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #fff;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+button.active{
+    background: black;
+    color: #fff;
+}
+.filterable_cards{
+    display: flex;
+    margin-top: 25px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card{
+    flex-grow: 1;
+    flex-basis: 300px;
+    background-color: rgb(88, 131, 119);
+    padding: 3px;
+    border-radius: 8px;
+}
+.card img{
+    border-radius: 8px 8px 0 0;
+    height: 210px;
+    width: 100%;
+    object-fit: cover;
+}
+.card_body{
+    padding: 15px 20px 20px;
+}
+.card_title{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+.card.hide{
+    display: none;
+}
+.gallery{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
